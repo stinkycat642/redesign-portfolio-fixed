@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A website for Brown University, cs1300: UIUX, Project Two: Responsive Redesign. This website shows the process and reasoning behind improving the design of my local Abington Free Library's book checkout webpage">
+    <meta name="author" content="Morgann Thain">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Responsive Redesign: MCLINC Abington Free Library Website —  cs1300 Project Two</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body style="text-align:center">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MCLINC Website Redesign</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>MCLINC Website Redesign</h1>
+        <p>This website shows the process and reasoning behind improving the design of my local Abington Free Library's book checkout webpage. By Morgann Thain. For Brown University, cs1300: UIUX, Project Two: Responsive Redesign. </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h1>Critique</h1>
+        <ul class="list-group">
+          <li class="list-group-item"><b><u>Usability & Efficiency: Priority and Hierarchy Issues</u></b>
+            <ol class="list-group">
+              <li class="list-group-item">User expects to be able to easily search for a different title if, upon clicking a title and reaching this page, you find the result to not be what you wanted. However, you cannot.</li>
+              <li class="list-group-item">Request book action is completely separated from the supporting library, location, and availability information</li>
+              <li class="list-group-item">Infinite clutter both in book description and library location and tags. Even after finding a certain library you want to look at, make it very confusing to find the information of whether it’s available quickly.</li>
+              <li class="list-group-item">Two column format and left justification are confusing and not elegant</li>
+            </ol>
+          </li>
+          <li class="list-group-item"><b>Learnability & Alignment with Users' Mental Models</b>
+            <ol class="list-group">
+              <li class="list-group-item">Important category information--Book title and Author--are not prioritized, so don't immediately find them</li>
+              <li class="list-group-item">Main Item of Interest--which library has your book and where that library is--is not even on the first page, and is cluttered</li>
+              <li class="list-group-item">Main action item--requesting a title--is small and completely separate and deprioritized on the far right colum with a dull background such that you expect no relevant information to be there; I didn’t even notice it on first look through and couldn’t figure out how to place a request</li>
+            </ol>
+          </li>
+          <li class="list-group-item"><b>Memorability</b>
+            <ol class="list-group">
+              <li class="list-group-item">Website design is generally dull and has a lot of random whitespace</li>
+              <li class="list-group-item">Page is filled with irrelevant and unparseable text rather than unique or key design elements</li>
+              <li class="list-group-item">Gives too much information about book tags, categorization, and exact location that is not memorable</li>
+              <!-- <li class="list-group-item"></li> -->
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <h1>Lo-Fi Prototypes</h1>
+        <p>These prototypes aim to solve the main Usability and Learnability problems very directly. First, the important information about the book--title, author, and picture--are made to be much bigger, while less important elements are smaller and not all shown at once. Instead, you can scroll or click a drop down to access the more detailed information. Second, the main table emphasizes just the information you need on a first look, namely location and availability. I also tried to make if very clear when you can request a book from a certain library by giving a big green button. I decided to put it right next to the availability and location information, and let you easily scroll down that column and only look at ones that have a green button, skipping any empty rows because you know you can't request from there. Finally, to aid in usability and focus, you can order the contents by location, and disclude and libraries than don't have the title you want. Furthermore, if you don't find what you want here, then you can easily search a new title using the search bar at the top. </p>
+        <div class="col-md-4 col-sm-12">
+          <h2 style="text-align:center">Desktop</h2>
+          <img class="img-responsive img-thumbnail" src="images/MCLINC-Desktop.png" alt="lo-fi balsamiq of desktop redesign">
+          <p>The desktop version has the most space, so I chose to let it show some of the extra details about the book. I still want the table to be big and readable, so I don't have too many items. </p>
+        </div>
+       <div class="col-md-4 col-sm-12">
+          <h2 style="text-align:center">Tablet</h2>
+          <img class="img-responsive img-thumbnail" src="images/MCLINC-Tablet.png" alt="lo-fi balsamiq of tablet redesign">
+          <p>The tablet is similar, but foregoes showing the details and instead lets you click for them so that we can leave the main table in focus. </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h2 style="text-align:center">Phone</h2>
+          <img class="img-responsive img-thumbnail" src="images/MCLINC-iPhone.png" alt="lo-fi balsamiq of phone redesign">
+          <p>The phone is similar to the tablet, but I decided to forego the exact availability numbers to maintain clarity and prevent clutter like in the original website. </p>
+        </div>
+
+      <div class="container-fluid">
+        <h1>Hi-Fi Protoypes</h1>
+        <p><em>Zoom into the embed to look at the style guide on the left or, from top to bottom, the individual tablet, desktop, and phone prototypes </em></p>
+
+
+
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3csqfvBp4cDnRk2xYHb3Fa%2FResponsive-Redesign%253A-MCLINC-Hi-Fi%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+       
+      </div>
+
+      
+
+      <div class="container-fluid">
+        <h1>Original Website</h1>
+        <p><a href="https://mclinc.polarislibrary.com/polaris/search/title.aspx?ctx=3.1033.0.0.1&pos=1&cn=2826150">Link!</a> <em>In order to see the same page, you need to search up the query again, e.g. "Lincoln, Abraham"</em></p>
+
+        <img class="img-responsive img-thumbnail" src="images/mclinc1.png" alt="generic book cover image" style="max-height: 60vh;">
+         <img class="img-responsive img-thumbnail" src="images/mclinc2.png" alt="generic book cover image" style="max-height: 60vh;">
+      </div>
+
+
+      <div class="container-fluid">
+        <h1>Redesigned Website</h1>
+        <p><a href="https://stinkycat642.github.io/redesign-fixed-file-paths/">Link!</a></p>
+
+        <img class="img-responsive img-thumbnail" src="images/redesign2.png" alt="generic book cover image" style="max-height: 60vh;">
+      </div>
+
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2022, Morgann Thain</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
